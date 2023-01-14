@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.left-sec {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+  margin-right: 90px;
+}
+
+.left-sec h1 {
+  font-size: 60px;
+  color: #1877f2;
+  margin-bottom: 10px;
+}
+
+.left-sec h3 {
+  font-size: 26px;
+  width: 450px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.right-sec .box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-top: 30px;
+}
+
+.box input {
+  width: 364px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid rgb(218, 216, 216);
+  outline: none;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.box input:focus {
+  border: 1px solid #1877f2;
+}
+
+button {
+  height: 52px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0c65da;
+}
+
+p {
+  color: #1877f2;
+  transition: 0.3s;
+  margin: 15px auto;
+  cursor: pointer;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+  margin: 10px;
+}
+
+.right-sec .box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #42b72a;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px auto 5px;
+  width: 193px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right-sec .box div:hover {
+  background-color: #35a11f;
+}
+
+p.page {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: text;
+}
+
+p.page span {
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 2px;
+}
+
+p.page span:hover {
+  text-decoration: underline;
+}
+
+@media (max-width:962px) {
+  .holder {
+    width: 100%;
+  }
+}
+
+@media (max-width:767px) {
+  .holder {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-sec {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+    text-align: center;
+    width: 300px !important;
+  }
+  .box input {
+    width: 300px;
+  }
+}
